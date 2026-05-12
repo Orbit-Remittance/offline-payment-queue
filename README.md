@@ -1,2 +1,3 @@
 # offline-payment-queue
 An offline-first payment queue system that stores signed Stellar transactions locally and broadcasts them when connectivity returns.
+An offline-first payment infrastructure that allows users to prepare, sign, and queue Stellar transactions locally while offline, then safely broadcast them once internet connectivity becomes available. The system handles transaction ordering, sequence management, retries, duplicate prevention, and expiration handling. It is optimized for regions with unstable network access and enables reliable cross-border payments without requiring constant connectivity. The project includes secure local storage, transaction synchronization, and real-time status updates once transactions are submitted to the network.
