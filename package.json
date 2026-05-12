@@ -1,0 +1,14 @@
+{
+  "name": "offline-payment-queue",
+  "private": true,
+  "workspaces": ["packages/shared", "packages/backend", "packages/frontend"],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "dev": "concurrently \"npm run dev -w packages/backend\" \"npm run dev -w packages/frontend\"",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  }
+}
